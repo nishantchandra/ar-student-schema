@@ -9,10 +9,11 @@ class CreateStudents < ActiveRecord::Migration
       n.string :first_name
       n.string :last_name
       n.string :gender
-      n.datetime :birthday
+      n.date :birthday
       n.string :email
       n.string :phone
-      n.timestamps
+      n.datetime :created_at
+      n.datetime :updated_at
     end
   end
 end    
